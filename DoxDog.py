@@ -28,7 +28,12 @@ def Doxxeo():
         print(amar +"Usuario: "+ verde + respuesta["nombre"])
         print(amar +"Compañia: "+ verde + respuesta["compañia"])
         print(amar +"Locacion: "+ verde + respuesta["locacion"])
+        print(amar +"Correo: "+ verde + respuesta["correo"])
+    except KeyError:
+        print(rojo + f"Sin correos asociados.. ")
         Doxxeo()
+    except KeyboardInterrupt:
+        exit(cyan + f"Nos vemos")
     except TypeError:
         print(rojo + f"No se encuenta en la{verde} DataBase\n")
         print(f"""
