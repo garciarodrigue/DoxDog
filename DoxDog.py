@@ -31,6 +31,11 @@ def Doxxeo():
         Doxxeo()
     except TypeError:
         print(rojo + f"No se encuenta en la{verde} DataBase\n")
+        print(f"""
+        {cyan}Comunicate con {verde}+50245472034{cyan}
+        Manda el numero de telefono que quieres que
+        añadan su info a la Data Base.
+              """)
         Doxxeo()
 
 Doxxeo()
